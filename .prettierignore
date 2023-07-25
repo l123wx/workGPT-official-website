@@ -1,0 +1,15 @@
+/dist/*
+.local
+.output.js
+/node_modules/**
+.nuxt
+.husky
+.vscode
+
+/*.js
+.npmrc
+
+**/*.svg
+**/*.sh
+
+/public/*
