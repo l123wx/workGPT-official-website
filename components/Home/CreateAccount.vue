@@ -10,9 +10,17 @@
 <style scoped lang="less">
     .create-account-container {
         background-color: #f8f8fa;
-        padding: 144px 0;
+        padding: 144px 40px;
+        margin: 0 auto;
+
         @media screen and (max-width: @viewport-xl) {
-            padding: 80px 0;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @media screen and (max-width: @viewport-md) {
+            padding-left: 20px;
+            padding-right: 20px;
         }
         .title {
             text-align: center;

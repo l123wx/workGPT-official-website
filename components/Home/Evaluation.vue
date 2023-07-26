@@ -45,11 +45,18 @@
 
 <style scoped lang="less">
     .evaluation-container {
-        width: 100%;
-        padding-bottom: 80px;
+        max-width: @page-content-max-width;
+        margin: 0 auto;
+        padding: 0 40px 80px;
+
         @media screen and (max-width: @viewport-xl) {
             border-bottom: 1px solid #d8d8d8;
             margin-bottom: 80px;
+        }
+
+        @media screen and (max-width: @viewport-md) {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 

@@ -14,8 +14,15 @@
 
 <style scoped lang="less">
     .title-container {
-        padding: 24px 0;
+        padding: 24px 40px;
         text-align: center;
+        max-width: @page-content-max-width;
+        margin: 0 auto;
+
+        @media screen and (max-width: @viewport-md) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .title {
             color: @default-font-color;
             font-feature-settings: 'clig' off, 'liga' off;

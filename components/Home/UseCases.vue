@@ -84,9 +84,17 @@
 
 <style scoped lang="less">
     .use-cases-container {
-        padding-bottom: 120px;
+        max-width: @page-content-max-width;
+        margin: 0 auto;
+        padding: 0 40px 120px;
+
         @media screen and (max-width: @viewport-xl) {
-            padding-bottom: 80px;
+            padding-bottom: 64px;
+        }
+
+        @media screen and (max-width: @viewport-md) {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
     .content {

@@ -22,16 +22,24 @@
 
 <style scoped lang="less">
     .intro-container {
-        width: 100%;
+        max-width: @page-content-max-width;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 80px;
+        margin: 0 auto 80px;
+        padding-left: 40px;
+        padding-right: 40px;
 
         @media screen and (max-width: @viewport-xl) {
             flex-direction: column;
-            padding: 40px 0 70px;
+            padding-top: 40px;
+            padding-bottom: 70px;
             border-bottom: 1px solid #d8d8d8;
+        }
+
+        @media screen and (max-width: @viewport-md) {
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         > div {

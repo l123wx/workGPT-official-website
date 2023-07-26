@@ -18,12 +18,16 @@
 <style scoped lang="less">
     .header-container {
         height: 110px;
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        max-width: @page-content-max-width;
+        margin: 0 auto;
+        padding: 0 40px;
+
         @media screen and (max-width: @viewport-md) {
+            padding: 0 20px;
             justify-content: center;
             height: 80px;
         }
