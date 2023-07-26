@@ -16,5 +16,8 @@
 <style lang="less">
     .layout {
         min-height: 100vh;
+        max-width: @page-content-max-width;
+        margin: 0 auto;
+        padding: 0 40px;
     }
 </style>
