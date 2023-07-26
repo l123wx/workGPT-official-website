@@ -52,6 +52,7 @@
 
         > img {
             width: 55%;
+            margin-right: -40px;
             @media screen and (max-width: @viewport-xl) {
                 width: 100%;
                 max-width: @viewport-md;
