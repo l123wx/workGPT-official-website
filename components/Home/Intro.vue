@@ -118,6 +118,12 @@
                 color: @color-white;
                 display: inline-block;
                 position: relative;
+                text-transform: capitalize;
+                color: #fff;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
 
                 + a {
                     margin-left: 12px;
@@ -133,6 +139,12 @@
                 color: @color-white;
                 border-radius: 12px;
                 box-shadow: 0px 10px 30px 0px rgba(0, 90, 255, 0.2);
+                text-transform: capitalize;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
             }
         }
         @media screen and (max-width: @viewport-lg) {

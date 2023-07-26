@@ -3,7 +3,8 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "types": [
-      "vite-plugin-svg-icons/client"
+      "vite-plugin-svg-icons/client",
+      "vite/client"
     ]
   }
 }
