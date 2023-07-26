@@ -16,8 +16,6 @@
     .title-container {
         padding: 24px 0;
         text-align: center;
-        margin-bottom: 64px;
-        margin-top: 80px;
         .title {
             color: @default-font-color;
             font-feature-settings: 'clig' off, 'liga' off;

@@ -46,6 +46,11 @@
 <style scoped lang="less">
     .evaluation-container {
         width: 100%;
+        padding-bottom: 80px;
+        @media screen and (max-width: @viewport-xl) {
+            border-bottom: 1px solid #d8d8d8;
+            margin-bottom: 80px;
+        }
     }
 
     .content {
@@ -53,6 +58,12 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
+        &:nth-child(2) {
+            margin-top: 64px;
+            @media screen and (max-width: @viewport-xl) {
+                margin-top: 80px;
+            }
+        }
         &:nth-child(2n) {
             flex-direction: row;
         }

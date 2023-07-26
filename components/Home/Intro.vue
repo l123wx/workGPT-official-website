@@ -1,7 +1,7 @@
 <template>
     <div class="intro-container">
         <div>
-            <div class="title"> Customized ChatGPT for your work </div>
+            <div class="title"> {{ 'Customized \nChatGPT \nfor your work' }} </div>
             <div class="intro"> Chat with your private APl, tools, data. </div>
             <div class="operation">
                 <div class="pc">
@@ -12,7 +12,7 @@
                     <NuxtLink to="/">Try it now - it’s free</NuxtLink>
                 </div>
             </div>
-            <div class="tips"> Get started for free, no credit card required. </div>
+            <div class="tips"> {{ 'Get started for free, \nno credit card required.' }} </div>
         </div>
         <img src="~/assets/images/intro.png" />
     </div>
@@ -26,6 +26,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 80px;
 
         @media screen and (max-width: @viewport-xl) {
             flex-direction: column;
@@ -63,6 +64,10 @@
             font-size: 38px;
             font-weight: 700;
             line-height: 50px;
+        }
+
+        @media screen and (max-width: @viewport-sm) {
+            white-space: pre-wrap;
         }
     }
 
@@ -134,7 +139,7 @@
             display: none;
             a {
                 display: inline-block;
-                padding: 16px 48px;
+                padding: 20px 24px;
                 background-color: @main-color;
                 color: @color-white;
                 border-radius: 12px;
@@ -169,6 +174,9 @@
         margin-top: 24px;
         @media screen and (max-width: @viewport-lg) {
             line-height: 18px;
+        }
+        @media screen and (max-width: @viewport-sm) {
+            white-space: pre-wrap;
         }
     }
 </style>
