@@ -19,5 +19,9 @@
         max-width: @page-content-max-width;
         margin: 0 auto;
         padding: 0 40px;
+
+        @media screen and (max-width: @viewport-md) {
+            padding: 0 20px;
+        }
     }
 </style>

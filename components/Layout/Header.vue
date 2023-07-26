@@ -25,6 +25,7 @@
 
         @media screen and (max-width: @viewport-md) {
             justify-content: center;
+            height: 80px;
         }
     }
 
