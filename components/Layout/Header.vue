@@ -1,11 +1,7 @@
 <template>
     <div class="header-container">
         <SvgIcon name="logo" class="logo" />
-        <div class="nav">
-            <NuxtLink to="/">Product</NuxtLink>
-            <NuxtLink to="/">Features</NuxtLink>
-            <NuxtLink to="/">Use Cases</NuxtLink>
-        </div>
+        <Nav />
         <div class="operation">
             <NuxtLink class="login" to="/">Login</NuxtLink>
             <NuxtLink class="try" to="/">Try It Now</NuxtLink>
@@ -13,7 +9,9 @@
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    import Nav from './Nav.vue'
+</script>
 
 <style scoped lang="less">
     .header-container {
@@ -40,26 +38,8 @@
 
     .nav {
         flex: 1;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 88px;
-
         @media screen and (max-width: @viewport-lg) {
             display: none;
-        }
-        a {
-            color: #101931;
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-family: Poppins;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            text-transform: capitalize;
-            & + a {
-                margin-left: 40px;
-            }
         }
     }
 
